@@ -3,6 +3,9 @@
 echo "Installing concordium the docker way, and all its dependencies."
 echo "Tested on Ubuntu 18.04 LTS."
 
+echo -e "\nCreates a user and a tmux session to run your node."
+echo "Does NOT meddle with your firewall. Though prepares your node for access from a different computer."
+
 ## variables
 useraccount="concordium"
 tmux_session="concordium"
