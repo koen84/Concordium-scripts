@@ -8,3 +8,5 @@ _Install your concordium node, from start to finsih, in 3 simple steps.  Takes c
 3. Run the script again as "concordium" user.
 
 This script does **NOT** meddle with your firewall.  It does however automatically prepare your node to be accessed from a different computer.
+
+This script produces `./run_concordium_tmux.sh` in the concordium-software directory, which allows you to (re)start your node at any point.
