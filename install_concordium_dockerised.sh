@@ -45,6 +45,11 @@ if [ $USER != "$useraccount" ]; then
 	## Docker test
 	# docker run hello-world
 
+	## Configure user
+	echo -e "\n$(tput setaf 3)## configuring user$(tput sgr0)"
+	adduser --disabled-password --gecos "" $useraccount
+	usermod -aG docker $useraccount
+
 	## Switch user
 	echo -e "\n$(tput setaf 3)## switching user$(tput sgr0)"
 	echo "run 'bash $script' again"
